@@ -1,0 +1,54 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
+    "nodemon": "nodemon ./dist/index.js",
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "lint:fix": "npm run lint --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrutikworkspace/express-server.git"
+  },
+  "author": "Hrutik Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrutikworkspace/express-server/issues"
+  },
+  "homepage": "https://github.com/hrutikworkspace/express-server#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.8",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "commitizen": "^4.2.4",
+    "dotenv": "^10.0.0",
+    "files": "^2.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "ts-loader": "^9.2.6",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-validator": "^6.14.0",
+    "swagger": "^0.7.5",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  }
+}
